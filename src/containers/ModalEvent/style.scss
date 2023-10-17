@@ -2,10 +2,11 @@
 
 .ModalEvent {
   font-family: "Manrope", sans-serif;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 450px;
   position: relative;
-  min-height: 669px;
+  max-height: 550px;
   &__imageContainer {
     width: 100%;
     img {
@@ -51,3 +52,16 @@
     }
   }
 }
+
+
+.ModalEvent::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.ModalEvent::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px; 
+}
+
+
+
